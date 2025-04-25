@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body{
+    margin:0;
+    padding: 0;
+   }
+   ul{
+    list-style-type:none;
+    background-color: black;
+    color: white;
+   }
+   .dropdown{
+    display: none;
+   }
+ 
+   ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li:hover{
+  background-color: green;
+  color:white;
+}
+.dropdown{display:none;}
+ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  margin-left:-0.29cm;
+  margin-top:0.27cm;
+}
+.dropdown ul li{
+  display: block;
+}
+.dropdown ul{
+  margin:0;
+  padding:0;
+}
+.dropdown2{
+  display: none;
+}
+.dropdown ul li:hover .dropdown2{
+ display: block;
+ position: absolute;
+ margin-left:2cm;
+ margin-top:-0.75cm;
+}
+.dropdown3{
+  display:none;
+}
+.dropdown ul li:hover .dropdown3{
+  display: block;
+  position: absolute;
+  margin-left:2cm;
+  margin-top:-0.75cm;
+}
+.dropdown4{
+  display:none;
+}
+.dropdown ul li:hover .dropdown4{
+  display: block;
+  position: absolute;
+  margin-left:2cm;
+  margin-top:-0.75cm;
+}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Courses
+      <div class="dropdown">
+        <ul>
+          <li>Arts
+            <div class="dropdown2">
+
+              <ul>
+                <a href="homepage.html" target="_blank">
+                <li>English</li>
+                </a>
+                <a href="homepage.html" target="_blank">
+                <li>Sociology</li>
+              </a>
+              </ul>
+            </div>
+          </li>
+          <li>Science
+            <div class="dropdown3">
+              <ul>
+                <a href="homepage.html" target="_blank">
+                <li>Computer Science</li>
+              </a>
+              <a href="homepage.html" target="_blank">
+                <li>Mathematics</li>
+              </a>
+              </ul>
+              
+            </div>
+          </li>
+          <li>Commerce
+            <div class="dropdown4">
+              <ul>
+                <a href="homepage.html" target="_blank">
+                <li>Accountancy</li>
+              </a>
+              <a href="homepage.html" target="_blank">
+                <li>Economics</li>
+              </a>
+              </ul>
+              
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </li>
+    <li>Contact Us</li>
+  </ul>
+</body>
+</html>
