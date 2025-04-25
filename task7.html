@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mainbox{
+      border:1px solid black;
+      height: 400px;
+      width: 500px;
+      border-radius:10px;
+      background-color:rgba(212, 212, 144, 0.818);
+    }
+    .submitbtn{
+      height:30px;
+      width:100px;
+      border-radius:20px;
+      background-color:rgb(207, 174, 174);
+    }
+    .inputclass{
+      border-radius:5px;
+      text-align: center;
+      background-color:pink ;
+    }
+    .labelclass{
+      padding-left:10px;
+      text-align: left;
+    }
+    .flexclass{
+      display:flex;
+      flex-direction:column;
+    }
+</style>
+</head>
+<body>
+  <center>
+    <h1>Personal details</h1>
+    <form>
+      <div class="mainbox">
+        <div class="flexclass">
+          <label class="labelclass">Name:</label>
+        <input placeholder="Enter your name"class="inputclass" inputtype="text">
+        <label class="labelclass">Age:</label>
+        <input placeholder="Enter your age"class="inputclass" type="number">
+        <label class="labelclass">Designation:</label>
+        <input placeholder="Enter your designation"class="inputclass" type="text">
+        <label class="labelclass">Email:</label>
+        <input placeholder="Enter your email"class="inputclass" type="email">
+        <label class="labelclass">Password:</label>
+        <input placeholder="Enter your password"class="inputclass" type="password">
+        <Label class="labelclass">Date of Birth</Label>
+        <input class="inputclass" type="date">
+
+        </div>
+        <br>
+        <button class ="submitbtn" type="submit">Submit</button>
+
+      </div>
+
+  </center>
+</form>
+</body>
+</html>
+
